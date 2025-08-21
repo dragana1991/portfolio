@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr" data-theme="auto">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Portfolio – Dragana Lukač</title>
+    <meta
+      name="description"
+      content="Portfolio web i grafičkog dizajna: UI/UX, HTML/CSS, brendiranje i ilustracije."
+    />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Dragana Lukač – Web & Grafički dizajn" />
+    <meta
+      property="og:description"
+      content="UI/UX, web sajtovi, brending, ilustracije."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/img/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Fontovi i ikonice -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="style.css?v=2" />
+    <!-- Stilovi -->
+    <link rel="stylesheet" href="style.css?v=3" />
+
+    <!-- Strukturisani podaci -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dragana Lukač",
+        "url": "",
+        "sameAs": ["https://www.linkedin.com/in/dragana-luka%C4%8D-60a5b8285/"],
+        "jobTitle": "Web & Grafički dizajner",
+        "knowsAbout": [
+          "UI/UX",
+          "HTML",
+          "CSS",
+          "Figma",
+          "Branding",
+          "Graphic Design"
+        ]
+      }
+    </script>
   </head>
 
   <body>
     <!-- Header -->
-    <header class="site-header">
-      <div class="container">
+    <header class="site-header" aria-label="Zaglavlje sajta">
+      <div class="container header-inner">
         <h1 class="brand">Dragana Lukač</h1>
-        <nav class="nav">
+        <nav class="nav" aria-label="Glavna navigacija">
           <a href="#web">Web</a>
           <a href="#graphic">Grafički</a>
           <a href="#contact">Kontakt</a>
@@ -33,20 +69,31 @@
       </div>
     </header>
 
-    <main>
+    <main id="main" role="main">
       <!-- HERO -->
-      <section class="hero">
+      <section class="hero" aria-label="Uvod">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <h2>Web & Graphic Design + QA</h2>
+            <p class="muted">UI/UX • Web • Brending • QA</p>
+            <h2>Zdravo, ja sam <span class="brand-accent">Dragana</span></h2>
             <p>
               Dizajniram jasne, brze i pristupačne interfejse. Prikaz radova iz
               Figma, HTML/CSS i grafičkog dizajna.
             </p>
             <div class="hero-cta">
               <a class="btn" href="#web">Vidi web radove</a>
-              <a class="btn" href="#graphic">Vidi grafičke radove</a>
+              <a class="btn btn--alt" href="#graphic">Vidi grafičke radove</a>
             </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="img/figma/sajt-namestaj/usluge.png"
+              alt="AI ilustracija koja predstavlja dizajn interfejsa i grafički rad"
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="400"
+            />
           </div>
         </div>
       </section>
@@ -59,15 +106,17 @@
 
           <div class="grid">
             <!-- Figma: Nameštaj -->
-            <article class="card">
+            <article class="card" aria-label="Web sajt za izradu nameštaja">
               <div class="img-wrap">
                 <img
                   src="img/figma/sajt-namestaj/design-system.png"
                   alt="Web sajt za izradu nameštaja – cover"
+                  loading="lazy"
+                  decoding="async"
                 />
+
                 <div class="overlay"><h4>Web sajt za izradu nameštaja</h4></div>
               </div>
-
               <div class="card-body">
                 <p>
                   Topla paleta, jasna navigacija, kontakt forma i mapa. Potpuni
@@ -76,7 +125,6 @@
                 <div class="tags">
                   <span class="tag">Figma</span><span class="tag">UI/UX</span>
                 </div>
-
                 <div class="links">
                   <a
                     class="btn"
@@ -91,22 +139,22 @@
             </article>
 
             <!-- Figma: Muzej -->
-            <article class="card">
+            <article class="card" aria-label="Muzej Grčke – responsive">
               <div class="img-wrap">
                 <img
                   src="img/figma/muzej/Collage_2025-08-14_13_49_19~2.jpg"
                   alt="Muzej Grčke – responsive – cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div class="overlay"><h4>Muzej Grčke – responsive</h4></div>
               </div>
-
               <div class="card-body">
                 <p>
                   Koncept sa fokusom na eksponate. Desktop, tablet i mobilni
                   prikaz.
                 </p>
                 <div class="tags"><span class="tag">Figma</span></div>
-
                 <div class="links">
                   <a
                     class="btn"
@@ -121,15 +169,16 @@
             </article>
 
             <!-- HTML/CSS: Landing -->
-            <article class="card">
+            <article class="card" aria-label="Sajt – HTML/CSS">
               <div class="img-wrap">
                 <img
                   src="img/crtanje/Collage_2025-08-14_13_56_15~2.jpg"
                   alt="Landing stranica – HTML/CSS – cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div class="overlay"><h4>Sajt – HTML/CSS</h4></div>
               </div>
-
               <div class="card-body">
                 <p>
                   Projekat kreiran kao vežba za front-end osnove – pravilan
@@ -155,11 +204,13 @@
 
           <div class="grid grid--art">
             <!-- Kartica 1 (AI) -->
-            <article class="card">
+            <article class="card" aria-label="Logotipi (AI)">
               <div class="img-wrap">
                 <img
                   src="img/ai/Collage_2025-08-14_14_02_47~2.jpg"
                   alt="Minimalistički logotipi – cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div class="overlay"><h4>Logotipi (AI)</h4></div>
               </div>
@@ -173,11 +224,13 @@
             </article>
 
             <!-- Kartica 2 (PS) -->
-            <article class="card">
+            <article class="card" aria-label="Posteri / ilustracije (PS)">
               <div class="img-wrap">
                 <img
                   src="img/ps/Collage_2025-08-14_13_58_19~2.jpg"
                   alt="Posteri, ilustracije, retuširanje – cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div class="overlay"><h4>Posteri / ilustracije (PS)</h4></div>
               </div>
@@ -196,9 +249,8 @@
       <!-- KONTAKT -->
       <section id="contact" class="section section--contact">
         <div class="container">
-          <div class="contact-card">
-            <h1>Kontakt</h1>
-
+          <h3>Kontakt</h3>
+          <div class="contact-card card">
             <p>
               <i
                 class="fa-solid fa-envelope contact-icon email"
@@ -222,6 +274,7 @@
                 LinkedIn profil
               </a>
             </p>
+
             <p>
               <i
                 class="fa-solid fa-file-pdf contact-icon cv"
