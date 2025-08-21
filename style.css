@@ -140,6 +140,7 @@ summary {
   min-height: 40vh;
   align-items: center;
   text-align: center;
+  gap: 40px;
 }
 .hero p {
   font-size: 1.1rem;
