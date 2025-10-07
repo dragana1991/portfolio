@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detalji rada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">Dragana Lukač</h1>
+        <nav class="nav">
+          <a href="index.html#web">Web</a>
+          <a href="index.html#graphic">Grafički</a>
+          <a href="index.html#contact">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div id="detail"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Dragana Lukač</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="app.js"></script>
+    <script>
+      renderDetail(); // učita sadržaj po ?slug=
+    </script>
+  </body>
+</html>

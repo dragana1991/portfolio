@@ -2,118 +2,89 @@
 <html lang="sr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Nameštaj – Figma projekat</title>
-
-    <!-- iz projects/ do style.css je JEDAN nivo gore -->
-    <link rel="stylesheet" href="../style.css" />
-
-    <style>
-      .project-hero {
-        padding: 40px 0 20px;
-      }
-      .project-hero .title {
-        margin: 0 0 6px;
-      }
-      /* pomoćno: da odmah vidiš da se učitala slika */
-      .img-wrap img {
-        display: block;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Web sajt za izradu nameštaja</title>
+    <link rel="stylesheet" href="../style.css?v=6" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <h1 class="brand">Dragana Lukač</h1>
         <nav class="nav">
-          <a href="../index.html#web">Nazad na Web radove</a>
+          <a href="../index.html#web">← Nazad na Web radove</a>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="project-hero">
-        <div class="container">
-          <h2 class="title">Web sajt za izradu nameštaja</h2>
-          <p class="muted">
-            Figma UI kit, design system, jasna navigacija, kontakt forma i mapa.
-          </p>
-          <div class="links" style="margin-top: 10px">
-            <a
-              class="btn btn-link"
-              href="https://www.figma.com/proto/WF1kQGTmHQzc91KeP1ABiA/Dizajn-Sajt?node-id=13-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3"
-              target="_blank"
-              rel="noopener"
-            >
-              Figma prototip
-            </a>
-            <a class="btn" href="../index.html#web">← Nazad</a>
-          </div>
-        </div>
-      </section>
+    <main class="section">
+      <div class="container">
+        <h2>Web sajt za izradu nameštaja</h2>
+        <p class="muted">
+          Figma UI kit, design system, jasna navigacija, kontakt forma i mapa.
+        </p>
 
-      <section class="section">
-        <div class="container">
-          <details class="embed" open>
-            <summary>Prikaži u stranici</summary>
-            <div class="embed-wrap">
-              <iframe
-                title="Figma – Nameštaj"
+        <div class="links" style="margin: 8px 0 24px">
+          <a
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            href="https://www.figma.com/proto/WF1kQGTmHQzc91KeP1ABiA/Dizajn-Sajt?node-id=13-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3"
+            >Figma</a
+          >
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="img-wrap img-wrap--wide">
+              <img
+                src="../img/figma/sajt-namestaj/design-system.png"
+                alt="Design system"
                 loading="lazy"
-                allowfullscreen
-                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/WF1kQGTmHQzc91KeP1ABiA/Dizajn-Sajt?node-id=13-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3"
-              >
-              </iframe>
+              />
             </div>
-          </details>
-
-          <div class="grid" style="margin-top: 16px">
-            <article class="card">
-              <div class="img-wrap">
-                <img
-                  src="../img/figma/sajt-namestaj/design-system.png"
-                  alt="Design system"
-                />
-              </div>
-              <div class="card-body"><p>Design system</p></div>
-            </article>
-
-            <article class="card">
-              <div class="img-wrap">
-                <img src="../img/figma/sajt-namestaj/home.png" alt="Home" />
-              </div>
-              <div class="card-body"><p>Home stranica</p></div>
-            </article>
-
-            <article class="card">
-              <div class="img-wrap">
-                <img src="../img/figma/sajt-namestaj/usluge.png" alt="Usluge" />
-              </div>
-              <div class="card-body"><p>Usluge</p></div>
-            </article>
-
-            <article class="card">
-              <div class="img-wrap">
-                <img src="../img/figma/sajt-namestaj/o-nama.png" alt="O nama" />
-              </div>
-              <div class="card-body"><p>O nama</p></div>
-            </article>
-
-            <article class="card">
-              <div class="img-wrap">
-                <img
-                  src="../img/figma/sajt-namestaj/kontakt.png"
-                  alt="Kontakt"
-                />
-              </div>
-              <div class="card-body"><p>Kontakt</p></div>
-            </article>
-          </div>
+          </article>
+          <article class="card">
+            <div class="img-wrap img-wrap--wide">
+              <img
+                src="../img/figma/sajt-namestaj/home.png"
+                alt="Home"
+                loading="lazy"
+              />
+            </div>
+          </article>
+          <article class="card">
+            <div class="img-wrap img-wrap--wide">
+              <img
+                src="../img/figma/sajt-namestaj/usluge.png"
+                alt="Usluge"
+                loading="lazy"
+              />
+            </div>
+          </article>
+          <article class="card">
+            <div class="img-wrap img-wrap--wide">
+              <img
+                src="../img/figma/sajt-namestaj/o-nama.png"
+                alt="O nama"
+                loading="lazy"
+              />
+            </div>
+          </article>
+          <article class="card">
+            <div class="img-wrap img-wrap--wide">
+              <img
+                src="../img/figma/sajt-namestaj/kontakt.png"
+                alt="Kontakt"
+                loading="lazy"
+              />
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
     </main>
+
+    <div id="lightbox-root" hidden></div>
+    <script defer src="../app.js?v=2"></script>
   </body>
 </html>
+Figma Dizajn Sajt Created with Figma

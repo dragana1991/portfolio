@@ -2,29 +2,18 @@
 <html lang="sr" data-theme="auto">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Portfolio – Dragana Lukač</title>
     <meta
       name="description"
       content="Portfolio web i grafičkog dizajna: UI/UX, HTML/CSS, brendiranje i ilustracije."
     />
 
-    <!-- Open Graph / Twitter -->
-    <meta property="og:title" content="Dragana Lukač – Web & Grafički dizajn" />
-    <meta
-      property="og:description"
-      content="UI/UX, web sajtovi, brending, ilustracije."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/img/og-cover.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- Fontovi i ikonice -->
+    <!-- Fontovi / ikone -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -33,17 +22,18 @@
     />
 
     <!-- Stilovi -->
-    <link rel="stylesheet" href="style.css?v=3" />
+    <link rel="stylesheet" href="style.css?v=9" />
 
-    <!-- Strukturisani podaci -->
+    <!-- Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Dragana Lukač",
-        "url": "",
-        "sameAs": ["https://www.linkedin.com/in/dragana-luka%C4%8D-60a5b8285/"],
         "jobTitle": "Web & Grafički dizajner",
+        "url": "",
+        "image": "img/profilna linkdin.jpg",
+        "sameAs": ["https://www.linkedin.com/in/dragana-luka%C4%8D-60a5b8285/"],
         "knowsAbout": [
           "UI/UX",
           "HTML",
@@ -55,14 +45,13 @@
       }
     </script>
   </head>
-
   <body>
     <!-- Header -->
     <header class="site-header" aria-label="Zaglavlje sajta">
       <div class="container header-inner">
         <h1 class="brand">Dragana Lukač</h1>
         <nav class="nav" aria-label="Glavna navigacija">
-          <a href="#web">Web</a>
+                   <a href="#web">Web</a>
           <a href="#graphic">Grafički</a>
           <a href="#contact">Kontakt</a>
         </nav>
@@ -74,29 +63,51 @@
       <section class="hero" aria-label="Uvod">
         <div class="container hero-inner">
           <div class="hero-copy">
+            <img
+              class="hero-avatar"
+              src="img/profilna linkdin.jpg"
+              alt="Profilna fotografija Dragane Lukač"
+              width="96"
+              height="96"
+              loading="lazy"
+            />
             <p class="muted">UI/UX • Web • Brending • QA</p>
+            
             <h2>Zdravo, ja sam <span class="brand-accent">Dragana</span></h2>
-            <p>
+            <h4>
               Dizajniram jasne, brze i pristupačne interfejse. Prikaz radova iz
               Figma, HTML/CSS i grafičkog dizajna.
+            </h4>
+            <h4>
+                      Otvorena za freelance projekte i stalne saradnje — piši mi ako
+                      želiš moderan sajt ili redizajn.
+            </h4>
+                    <div class="about-meta">
+                      <span class="tag">UI/UX</span><span class="tag">Figma</span
+                      ><span class="tag">Adobe</span><span class="tag">WordPress</span>
+                      <span class="tag">SEO</span><span class="tag">HTML</span
+                      ><span class="tag">CSS</span><span class="tag">JS</span
+                      ><span class="tag">Branding</span>
+                    </div>
+             
             </p>
             <div class="hero-cta">
               <a class="btn" href="#web">Vidi web radove</a>
               <a class="btn btn--alt" href="#graphic">Vidi grafičke radove</a>
             </div>
           </div>
-          <div class="hero-image">
+          <div class="hero-image" aria-hidden="true">
             <img
               src="img/pozadina/Frame 1 (1).png"
-              alt="AI ilustracija koja predstavlja dizajn interfejsa i grafički rad"
+              alt=""
               loading="lazy"
               decoding="async"
-              width="600"
-              height="400"
             />
           </div>
         </div>
       </section>
+
+      <!-- ABOUT -->
 
       <!-- WEB -->
       <section id="web" class="section">
@@ -105,17 +116,13 @@
           <p class="muted">Figma prototipi i HTML/CSS implementacije.</p>
 
           <div class="grid">
-            <!-- Figma: Nameštaj -->
             <article class="card" aria-label="Web sajt za izradu nameštaja">
-              <div class="img-wrap">
+              <div class="img-wrap img-wrap--wide">
                 <img
                   src="img/figma/sajt-namestaj/design-system.png"
-                  alt="Web sajt za izradu nameštaja – cover"
+                  alt="Web sajt za izradu nameštaja"
                   loading="lazy"
-                  decoding="async"
                 />
-
-                <div class="overlay"><h4>Web sajt za izradu nameštaja</h4></div>
               </div>
               <div class="card-body">
                 <p>
@@ -128,26 +135,23 @@
                 <div class="links">
                   <a
                     class="btn"
-                    href="https://www.figma.com/proto/WF1kQGTmHQzc91KeP1ABiA/Dizajn-Sajt?node-id=13-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3"
                     target="_blank"
                     rel="noopener"
-                    >Figma prototip</a
+                    href="https://www.figma.com/proto/WF1kQGTmHQzc91KeP1ABiA/Dizajn-Sajt?node-id=13-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A3"
+                    >Figma</a
                   >
                   <a class="btn" href="projects/namestaj.html">Vidi radove</a>
                 </div>
               </div>
             </article>
 
-            <!-- Figma: Muzej -->
             <article class="card" aria-label="Muzej Grčke – responsive">
-              <div class="img-wrap">
+              <div class="img-wrap img-wrap--wide">
                 <img
                   src="img/figma/muzej/Collage_2025-08-14_13_49_19~2.jpg"
-                  alt="Muzej Grčke – responsive – cover"
+                  alt="Muzej Grčke – cover"
                   loading="lazy"
-                  decoding="async"
                 />
-                <div class="overlay"><h4>Muzej Grčke – responsive</h4></div>
               </div>
               <div class="card-body">
                 <p>
@@ -158,32 +162,28 @@
                 <div class="links">
                   <a
                     class="btn"
-                    href="https://www.figma.com/proto/DGhGUkdFqovK9YP2dRRiO0/Moj-Blog?node-id=105-21&p=f&t=h00hjFsK8qeoR0KH-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=95%3A6"
                     target="_blank"
                     rel="noopener"
-                    >Figma prototip</a
+                    href="https://www.figma.com/proto/DGhGUkdFqovK9YP2dRRiO0/Moj-Blog?node-id=105-21&p=f&t=h00hjFsK8qeoR0KH-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=95%3A6"
+                    >Figma</a
                   >
                   <a class="btn" href="projects/muzej.html">Vidi radove</a>
                 </div>
               </div>
             </article>
 
-            <!-- HTML/CSS: Landing -->
             <article class="card" aria-label="Sajt – HTML/CSS">
-              <div class="img-wrap">
+              <div class="img-wrap img-wrap--wide">
                 <img
                   src="img/crtanje/Collage_2025-08-14_13_56_15~2.jpg"
                   alt="Landing stranica – HTML/CSS – cover"
                   loading="lazy"
-                  decoding="async"
                 />
-                <div class="overlay"><h4>Sajt – HTML/CSS</h4></div>
               </div>
               <div class="card-body">
                 <p>
-                  Projekat kreiran kao vežba za front-end osnove – pravilan
-                  raspored elemenata, rad sa tekstom, slikama i navigacijom
-                  korišćenjem čistog HTML-a i CSS-a.
+                  Vežba front-end osnova: layout, tipografija, rad sa slikama i
+                  navigacijom u čistom HTML/CSS.
                 </p>
                 <div class="tags">
                   <span class="tag">HTML</span><span class="tag">CSS</span>
@@ -201,18 +201,14 @@
       <section id="graphic" class="section">
         <div class="container">
           <h3>Grafički dizajn</h3>
-
-          <div class="grid grid--art">
-            <!-- Kartica 1 (AI) -->
+          <div class="grid">
             <article class="card" aria-label="Logotipi (AI)">
               <div class="img-wrap">
                 <img
                   src="img/ai/Collage_2025-08-14_14_02_47~2.jpg"
                   alt="Minimalistički logotipi – cover"
                   loading="lazy"
-                  decoding="async"
                 />
-                <div class="overlay"><h4>Logotipi (AI)</h4></div>
               </div>
               <div class="card-body">
                 <p>Minimalistički logotipi, vežba vektora.</p>
@@ -223,16 +219,13 @@
               </div>
             </article>
 
-            <!-- Kartica 2 (PS) -->
             <article class="card" aria-label="Posteri / ilustracije (PS)">
               <div class="img-wrap">
                 <img
                   src="img/ps/Collage_2025-08-14_13_58_19~2.jpg"
                   alt="Posteri, ilustracije, retuširanje – cover"
                   loading="lazy"
-                  decoding="async"
                 />
-                <div class="overlay"><h4>Posteri / ilustracije (PS)</h4></div>
               </div>
               <div class="card-body">
                 <p>Posteri, ilustracije, retuširanje.</p>
@@ -246,50 +239,32 @@
         </div>
       </section>
 
-      <!-- KONTAKT -->
+      <!-- CONTACT -->
       <section id="contact" class="section section--contact">
         <div class="container">
           <h3>Kontakt</h3>
           <div class="contact-card card">
             <p>
-              <i
-                class="fa-solid fa-envelope contact-icon email"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-envelope contact-icon email"></i>
               <a href="mailto:draganavorkapic91@gmail.com"
                 >draganavorkapic91@gmail.com</a
               >
             </p>
-
             <p>
-              <i
-                class="fa-brands fa-linkedin contact-icon linkedin"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-brands fa-linkedin contact-icon linkedin"></i>
               <a
                 href="https://www.linkedin.com/in/dragana-luka%C4%8D-60a5b8285/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
+                >LinkedIn</a
               >
-                LinkedIn profil
-              </a>
             </p>
-
             <p>
-              <i
-                class="fa-solid fa-file-pdf contact-icon cv"
-                aria-hidden="true"
-              ></i>
-              <a href="CV.pdf" target="_blank" rel="noopener noreferrer">
-                Preuzmi CV
-              </a>
+              <i class="fa-solid fa-file-pdf contact-icon cv"></i>
+              <a href="CV.pdf" target="_blank" rel="noopener">Preuzmi CV</a>
             </p>
-
             <p>
-              <i
-                class="fa-solid fa-phone contact-icon phone"
-                aria-hidden="true"
-              ></i>
+              <i class="fa-solid fa-phone contact-icon phone"></i>
               <a href="tel:+381604000706">+381 60 400 0706</a>
             </p>
           </div>

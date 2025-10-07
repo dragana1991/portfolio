@@ -2,71 +2,80 @@
 <html lang="sr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>HTML/CSS</title>
-    <link rel="stylesheet" href="../style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HTML/CSS projekti</title>
+    <link rel="stylesheet" href="../style.css?v=6" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
         <h1 class="brand">Dragana Lukač</h1>
         <nav class="nav">
-          <a href="../index.html#web">Nazad na web radove</a>
+          <a href="../index.html#web">← Nazad na Web radove</a>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="section">
-        <div class="container">
-          <h2>Html i Css</h2>
-          <p class="muted">Kreiranje sajta sa čistim html i css</p>
+    <main class="section">
+      <div class="container">
+        <h2>HTML/CSS projekti</h2>
+        <p class="muted">Kreiranje sajta sa čistim HTML i CSS.</p>
 
-          <div class="grid">
-            <!-- PROJEKAT 1 -->
-            <article class="card">
-              <div class="links">
-                <a
-                  class="btn"
-                  href="https://dragana1991.github.io/sajt_stranice_novi_sad/"
-                  target="_blank"
-                  >Live</a
-                >
-                <a
-                  class="btn"
-                  href="https://github.com/dragana1991/sajt_stranice_novi_sad"
-                  target="_blank"
-                  >Repo</a
-                >
-              </div>
-              <div class="img-wrap">
-                <img src="../img/html-css/Group 2.png" alt="Sekcija 1" />
-              </div>
-            </article>
-
-            <!-- PROJEKAT 2 -->
-            <article class="card">
-              <div class="links">
-                <a
-                  class="btn"
-                  href="https://dragana1991.github.io/sajt_mihajlo_pupin/"
-                  target="_blank"
-                  >Live</a
-                >
-                <a
-                  class="btn"
-                  href="https://github.com/dragana1991/sajt_mihajlo_pupin"
-                  target="_blank"
-                  >Repo</a
-                >
-              </div>
-              <div class="img-wrap">
-                <img src="../img/html-css/Book.png" alt="Sekcija 2" />
-              </div>
-            </article>
-          </div>
+        <div class="links" style="margin: 8px 0 24px">
+          <a
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            href="https://dragana1991.github.io/sajt_stranice_novi_sad/"
+            >Live 1</a
+          >
+          <a
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/dragana1991/sajt_stranice_novi_sad"
+            >Repo 1</a
+          >
+          <a
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            href="https://dragana1991.github.io/sajt_mihajlo_pupin/"
+            >Live 2</a
+          >
+          <a
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/dragana1991/sajt_mihajlo_pupin"
+            >Repo 2</a
+          >
         </div>
-      </section>
+
+        <div class="grid">
+          <article class="card">
+            <div class="img-wrap img-wrap--wide">
+              <img
+                src="../img/html-css/Group%202.png"
+                alt="Sekcija 1"
+                loading="lazy"
+              />
+            </div>
+          </article>
+          <article class="card">
+            <div class="img-wrap img-wrap--wide">
+              <img
+                src="../img/html-css/Book.png"
+                alt="Sekcija 2"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        </div>
+      </div>
     </main>
+
+    <div id="lightbox-root" hidden></div>
+    <script defer src="../app.js?v=2"></script>
   </body>
 </html>
