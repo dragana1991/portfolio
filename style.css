@@ -66,10 +66,10 @@ h3 {
   font-size: 18px;
 }
 h4 {
-  font-family: "Playfair Display", serif;
+  text-decoration: none;
   margin: 0 0 8px;
   font-size: 18px;
-  color: #ffffff;
+  color: #d9d0de;
 }
 
 /* ==== Header ==== */
